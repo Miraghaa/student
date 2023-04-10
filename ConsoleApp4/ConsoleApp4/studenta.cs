@@ -5,7 +5,7 @@
     public string Group;
     public int Point;
     public bool isgraduated;
-    int yearofstudy = 3;
+    int yearofstudy = 5;
 
     public studenta(string name, string Surname, string group, int point)
 
@@ -35,21 +35,30 @@
         {
             isgraduated = true;
             Console.WriteLine("mezun olub oturub evde deyir is yoxdu");
+
         }
-        else
+        else if (  Point> 80)
+        {
+
+            Console.WriteLine("mezun olmuyuf hele oxuyur akedemik olajax");
+            Console.WriteLine("imtahan seni gozleyir.ugurlar"); 
+        }
+        else 
         {
             Console.WriteLine("mezun olmuyuf hele oxuyur akedemik olajax");
+            Console.WriteLine("bextivi birde yoxla");
         }
-        
-            if ( isgraduated=true&& Point > 80)
-            {
-                Console.WriteLine("imtahan seni gozleyir.ugurlar");
-            }
-             else if(isgraduated = true && Point <81)
-            {
-                Console.WriteLine("bextivi bir daha yoxla");
-            }
-            
+            //if (isgraduated = false && Point > 80)
+            //{
+            //    Console.WriteLine("imtahan seni gozleyir.ugurlar");
+            //}
+
+            //else
+            //{
+            //    isgraduated = false;
+            //    Console.WriteLine("bextivi bir daha yoxla");
+            //}
+
         
     }
 }
