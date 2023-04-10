@@ -1,5 +1,5 @@
 ﻿studenta studenta = new studenta("Miraga", "Aliyev");
-studenta studenta1 = new studenta("Miraga", "Aliyev", "p234", 85);
+studenta studenta1 = new studenta("Miraga", "Aliyev", "p234", 80);
 
 
 studenta.getfullname();

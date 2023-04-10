@@ -15,7 +15,7 @@
         this.Group = group;
         this.Point = point;
         this.isgraduated = false;
-    }
+    } 
     public studenta(string name, string Surname)
     {
         this.Name = name;
@@ -35,17 +35,21 @@
         {
             isgraduated = true;
             Console.WriteLine("mezun olub oturub evde deyir is yoxdu");
-
-        }
-        Console.WriteLine("mezun olmuyuf hele oxuyur akademik olajax");
-        if (Point > 80)
-        {
-            Console.WriteLine("imtahan seni gozleyir.ugurlar");
         }
         else
         {
-            Console.WriteLine("bextivi bir daha yoxla");
+            Console.WriteLine("mezun olmuyuf hele oxuyur akedemik olajax");
         }
-
+        
+            if ( isgraduated=true&& Point > 80)
+            {
+                Console.WriteLine("imtahan seni gozleyir.ugurlar");
+            }
+             else if(isgraduated = true && Point <81)
+            {
+                Console.WriteLine("bextivi bir daha yoxla");
+            }
+            
+        
     }
 }
